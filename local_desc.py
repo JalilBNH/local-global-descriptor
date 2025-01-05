@@ -3,8 +3,8 @@ import random
 from matplotlib import pyplot as plt
 import numpy as np
 
-img1 = cv2.imread('IMG_2095.jpeg')
-img2 = cv2.imread('IMG_2096.jpeg')
+img1 = cv2.imread('./local_desc_img/IMG_2095.jpeg')
+img2 = cv2.imread('./local_desc_img/IMG_2096.jpeg')
 s = cv2.SIFT_create()
 kp_1, desc_1 = s.detectAndCompute(img1, None)
 kp_2, desc_2 = s.detectAndCompute(img2, None)
